@@ -3,6 +3,7 @@ package com.example.mytodo.model.todo
 import androidx.room.*
 import java.util.concurrent.Flow
 
+
 //roomではinterfaceでdaoを作成
 @Dao
 interface ToDoDAO {
