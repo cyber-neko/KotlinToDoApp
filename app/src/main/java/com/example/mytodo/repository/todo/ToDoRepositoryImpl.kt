@@ -4,8 +4,12 @@ import com.example.mytodo.model.todo.ToDo
 import com.example.mytodo.model.todo.ToDoDAO
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class ToDoRepositoryImpl(private val dao: ToDoDAO): ToDoRepository {
+//hiltはToDoDaoを知らないのでまずobjectファイル(ToDoModule)を作成する
+class ToDoRepositoryImpl @Inject constructor (
+    private val dao: ToDoDAO
+): ToDoRepository {
     //データベースに保存する処理
     override suspend fun create(title: String, detail: String) {
         val now = System.currentTimeMillis()
