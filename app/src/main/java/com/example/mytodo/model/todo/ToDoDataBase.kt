@@ -7,5 +7,5 @@ import androidx.room.RoomDatabase
 @Database(entities = [ToDo::class], version = 1)
 abstract class ToDoDataBase:  RoomDatabase() {
     //daoを返すメソッドを実装する必要がある
-    abstract  fun todoDAO(): ToDoDAO
+    abstract fun todoDAO(): ToDoDAO
 }
