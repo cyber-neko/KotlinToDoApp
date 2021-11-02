@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ToDoDAO {
 
-    @Query("select * from ToDo where created < :startCreated order by created")
+    @Query("select * from ToDo where created < :startCreated order by created desc limit :limit")
     fun getWithCreated(startCreated: Long, limit: Int): Flow<List<ToDo>>
     //KotlinコルーチンのFlow<T>にすることでデータベースに変更があると新しい結果が流れてくる
     @Insert
