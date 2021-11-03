@@ -10,12 +10,12 @@ import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object ToDoModule {
 
     @Singleton
@@ -40,7 +40,7 @@ object ToDoModule {
 //ToDoRepositoryインスタンスの作り方もhiltに教える
 //objectとclassの場合はこの引数
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 abstract class ToDoRepositoryModule {
 
     @Singleton
