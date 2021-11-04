@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/edit_todo_fragment.xml" value="0.1381340579710145" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/todo_detail_fragment.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/todo_item.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_create.xml" value="0.12708333333333333" />
       </map>
     </option>
@@ -17,5 +18,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12056737588652482" />
+      </ProjectState>
+    </option>
   </component>
 </project>
