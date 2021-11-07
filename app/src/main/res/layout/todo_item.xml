@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/title"/>
+        tools:text="Title"/>
 
     <TextView
         android:id="@+id/created_text"
@@ -31,5 +31,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_text"
         android:textAppearance="?attr/textAppearanceBody2"
-        tools:text="2021-11-04"/>
+        tools:text="2021-11-07"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
